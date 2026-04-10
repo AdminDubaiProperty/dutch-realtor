@@ -28,7 +28,7 @@ export default function PainPoints() {
     <section className="py-24 md:py-32 bg-dark-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 scroll-animate">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-dark-50 mb-4 tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-dark-50 mb-4 tracking-tight">
             Investeren in buitenlands vastgoed klinkt aantrekkelijk,{" "}
             <span className="text-gradient-gold">maar...</span>
           </h2>
@@ -43,10 +43,10 @@ export default function PainPoints() {
               <div className="w-14 h-14 bg-gold-500/10 rounded-xl flex items-center justify-center text-gold-400 mb-5 group-hover:bg-gold-500/20 transition-colors">
                 {point.icon}
               </div>
-              <h3 className="font-heading text-xl font-bold text-dark-50 mb-3 group-hover:text-gold-400 transition-colors">
+              <h3 className="font-heading text-xl font-medium text-dark-50 mb-3 group-hover:text-gold-400 transition-colors">
                 {point.title}
               </h3>
-              <p className="text-dark-50/50 leading-relaxed font-light">{point.desc}</p>
+              <p className="text-dark-50/50 leading-relaxed font-extralight">{point.desc}</p>
             </div>
           ))}
         </div>

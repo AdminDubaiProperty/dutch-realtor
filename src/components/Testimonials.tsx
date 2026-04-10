@@ -26,7 +26,7 @@ export default function Testimonials() {
     <section className="py-24 md:py-32 bg-dark-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 scroll-animate">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-dark-50 mb-4 tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-dark-50 mb-4 tracking-tight">
             Wat onze klanten <span className="text-gradient-gold">zeggen</span>
           </h2>
         </div>
@@ -58,12 +58,12 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-dark-50/70 text-lg leading-relaxed mb-6 italic relative z-10 font-light">
+              <p className="text-dark-50/70 text-lg leading-relaxed mb-6 italic relative z-10 font-extralight">
                 &ldquo;{t.text}&rdquo;
               </p>
 
               <div className="flex items-center gap-3 relative z-10">
-                <div className="w-11 h-11 bg-gold-500/15 rounded-full flex items-center justify-center text-gold-400 font-semibold text-sm border border-gold-500/20">
+                <div className="w-11 h-11 bg-gold-500/15 rounded-full flex items-center justify-center text-gold-400 font-normal text-sm border border-gold-500/20">
                   {t.initials}
                 </div>
                 <div>

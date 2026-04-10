@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
-            <span className="text-gold-400 text-2xl font-heading font-extrabold tracking-tight">
+            <span className="text-gold-400 text-2xl font-heading font-semibold tracking-tight">
               Dutch Realtor
             </span>
-            <p className="text-dark-50/40 mt-3 text-sm leading-relaxed font-light">
+            <p className="text-dark-50/40 mt-3 text-sm leading-relaxed font-extralight">
               Jouw Nederlandse makelaar voor vastgoed wereldwijd. Betrouwbaar, transparant en persoonlijk.
             </p>
           </div>

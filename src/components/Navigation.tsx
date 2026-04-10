@@ -32,7 +32,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#home" className="flex items-center gap-2">
-            <span className="text-gold-400 text-2xl font-heading font-extrabold tracking-tight">
+            <span className="text-gold-400 text-2xl font-heading font-semibold tracking-tight">
               Dutch Realtor
             </span>
           </a>
@@ -49,7 +49,7 @@ export default function Navigation() {
             ))}
             <a
               href="#contact"
-              className="bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 hover:shadow-lg hover:shadow-gold-500/20"
+              className="bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 hover:shadow-lg hover:shadow-gold-500/20"
             >
               Gratis Gesprek
             </a>
@@ -88,7 +88,7 @@ export default function Navigation() {
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}
-            className="block mt-3 bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-3 rounded-lg text-center font-bold transition-all"
+            className="block mt-3 bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-3 rounded-lg text-center font-medium transition-all"
           >
             Gratis Gesprek
           </a>

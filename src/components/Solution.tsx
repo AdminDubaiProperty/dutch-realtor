@@ -28,7 +28,7 @@ export default function Solution() {
     <section id="over-ons" className="py-24 md:py-32 bg-dark-900/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 scroll-animate">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-dark-50 mb-4 tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-dark-50 mb-4 tracking-tight">
             Wij zijn jouw Nederlandse makelaar{" "}
             <span className="text-gradient-gold">in het buitenland</span>
           </h2>
@@ -43,10 +43,10 @@ export default function Solution() {
               <div className="w-14 h-14 bg-gold-500/10 rounded-xl flex items-center justify-center text-gold-400 mb-5 group-hover:bg-gold-500/20 transition-colors">
                 {f.icon}
               </div>
-              <h3 className="font-heading text-xl font-bold text-dark-50 mb-3">
+              <h3 className="font-heading text-xl font-medium text-dark-50 mb-3">
                 {f.title}
               </h3>
-              <p className="text-dark-50/50 leading-relaxed font-light">{f.desc}</p>
+              <p className="text-dark-50/50 leading-relaxed font-extralight">{f.desc}</p>
             </div>
           ))}
         </div>

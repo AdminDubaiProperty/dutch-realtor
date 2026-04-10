@@ -44,7 +44,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ["var(--font-outfit)", "sans-serif"],
+        heading: ["var(--font-heading)", "serif"],
         body: ["var(--font-plus-jakarta)", "sans-serif"],
       },
       keyframes: {

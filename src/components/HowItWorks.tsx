@@ -26,7 +26,7 @@ export default function HowItWorks() {
     <section id="werkwijze" className="py-24 md:py-32 bg-dark-900/30">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 scroll-animate">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-dark-50 mb-4 tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-dark-50 mb-4 tracking-tight">
             In 3 stappen naar jouw{" "}
             <span className="text-gradient-gold">buitenlandse woning</span>
           </h2>
@@ -44,7 +44,7 @@ export default function HowItWorks() {
                 }`}
               >
                 <div className="relative z-10 flex-shrink-0 w-20 h-20 bg-dark-950 border-2 border-gold-500/60 rounded-full flex items-center justify-center">
-                  <span className="font-heading text-2xl font-black text-gold-400">
+                  <span className="font-heading text-2xl font-semibold text-gold-400">
                     {step.num}
                   </span>
                 </div>
@@ -56,11 +56,11 @@ export default function HowItWorks() {
                 >
                   <div className={`flex items-center gap-3 mb-3 justify-center ${i % 2 === 1 ? "md:justify-end" : "md:justify-start"}`}>
                     <span className="text-gold-400">{step.icon}</span>
-                    <h3 className="font-heading text-2xl font-bold text-dark-50">
+                    <h3 className="font-heading text-2xl font-medium text-dark-50">
                       {step.title}
                     </h3>
                   </div>
-                  <p className="text-dark-50/50 text-lg leading-relaxed font-light">
+                  <p className="text-dark-50/50 text-lg leading-relaxed font-extralight">
                     {step.desc}
                   </p>
                 </div>

@@ -26,11 +26,11 @@ export default function ContactForm() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center mb-12 scroll-animate">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-dark-50 mb-4 tracking-tight">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-dark-50 mb-4 tracking-tight">
             Ontdek welk land bij jouw{" "}
             <span className="text-gradient-gold">investering</span> past
           </h2>
-          <p className="text-dark-50/50 text-lg max-w-2xl mx-auto font-light">
+          <p className="text-dark-50/50 text-lg max-w-2xl mx-auto font-extralight">
             Plan een gratis orientatiegesprek of download ons e-book
           </p>
         </div>
@@ -119,7 +119,7 @@ export default function ContactForm() {
 
             <button
               type="submit"
-              className="w-full bg-gold-500 hover:bg-gold-600 text-dark-950 py-4 rounded-xl text-lg font-bold transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/20"
+              className="w-full bg-gold-500 hover:bg-gold-600 text-dark-950 py-4 rounded-xl text-lg font-medium transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/20"
             >
               Verstuur aanvraag
             </button>

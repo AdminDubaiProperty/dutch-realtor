@@ -17,18 +17,18 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-20">
-        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+        <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-tight mb-6 tracking-tight">
           <span className="text-dark-50">Investeer in vastgoed wereldwijd,</span>
           <br />
           <span className="text-gradient-gold">met Nederlandse begeleiding</span>
         </h1>
-        <p className="text-dark-50/60 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+        <p className="text-dark-50/60 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-10 leading-relaxed font-extralight">
           Van Marrakech tot Dubai, van Curacao tot Belgrado. Wij begeleiden Nederlandse investeerders bij elke stap van het aankoopproces.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#contact"
-            className="bg-gold-500 hover:bg-gold-600 text-dark-950 px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/30 hover:-translate-y-0.5"
+            className="bg-gold-500 hover:bg-gold-600 text-dark-950 px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/30 hover:-translate-y-0.5"
           >
             Plan een gratis gesprek
           </a>

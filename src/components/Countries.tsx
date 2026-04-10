@@ -11,12 +11,12 @@ const countries = [
   { name: "Albanie", price: "\u20AC55.000", tag: "Opkomende markt", image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80", featured: false },
   { name: "Saudi-Arabie", price: "\u20AC120.000", tag: "Vision 2030", image: "https://images.unsplash.com/photo-1578895101408-1a36b834405b?w=800&q=80", featured: false },
   { name: "Suriname", price: "\u20AC35.000", tag: "Nederlandse taal", image: "https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?w=800&q=80", featured: false },
-  { name: "Nederland", price: "\u20AC180.000", tag: "Thuismarkt", image: "https://images.unsplash.com/photo-1534351590666-13e3e96b5571?w=800&q=80", featured: false },
-  { name: "Aruba", price: "\u20AC95.000", tag: "Caribisch paradijs", image: "https://images.unsplash.com/photo-1548041347-390744c58da4?w=800&q=80", featured: false },
+  { name: "Nederland", price: "\u20AC180.000", tag: "Thuismarkt", image: "https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?w=800&q=80", featured: false },
+  { name: "Aruba", price: "\u20AC95.000", tag: "Caribisch paradijs", image: "https://images.unsplash.com/photo-1580237541049-2d715a09486e?w=800&q=80", featured: false },
   { name: "Bonaire", price: "\u20AC110.000", tag: "Bijzondere gemeente NL", image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=800&q=80", featured: false },
   { name: "Ras Al Khaimah", price: "\u20AC80.000", tag: "Opkomend alternatief", image: "https://images.unsplash.com/photo-1597659840241-37e2b9c2f55f?w=800&q=80", featured: false },
   { name: "Abu Dhabi", price: "\u20AC130.000", tag: "Stabiele groei", image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=800&q=80", featured: false },
-  { name: "Servie", price: "\u20AC40.000", tag: "EU-kandidaat", image: "https://images.unsplash.com/photo-1592476480622-90a0410e7804?w=800&q=80", featured: false },
+  { name: "Servie", price: "\u20AC40.000", tag: "EU-kandidaat", image: "https://images.unsplash.com/photo-1556804335-2fa563e93aae?w=800&q=80", featured: false },
   { name: "China", price: "\u20AC60.000", tag: "Grootste markt ter wereld", image: "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?w=800&q=80", featured: false },
 ];
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,58 +31,44 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
-            <span className="text-gold-400 text-2xl font-heading font-bold">
+            <span className="text-gold-400 text-2xl font-heading font-extrabold tracking-tight">
               Dutch Realtor
             </span>
           </a>
 
-          {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
             {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-dark-300 hover:text-gold-400 transition-colors duration-200 font-medium"
+                className="text-sm text-dark-50/70 hover:text-gold-400 transition-colors duration-200 font-medium tracking-wide"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contact"
-              className="bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-gold-500/20"
+              className="bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 hover:shadow-lg hover:shadow-gold-500/20"
             >
               Gratis Gesprek
             </a>
           </div>
 
-          {/* Mobile Hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-1.5"
+            className="md:hidden w-8 h-8 flex items-center justify-center text-white"
             aria-label="Menu"
           >
-            <span
-              className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-                isOpen ? "rotate-45 translate-y-2" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-                isOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-                isOpen ? "-rotate-45 -translate-y-2" : ""
-              }`}
-            />
+            {isOpen ? (
+              <X size={24} strokeWidth={1.5} />
+            ) : (
+              <Menu size={24} strokeWidth={1.5} />
+            )}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`md:hidden transition-all duration-300 overflow-hidden ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
@@ -93,7 +80,7 @@ export default function Navigation() {
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="block py-3 px-4 text-dark-200 hover:text-gold-400 hover:bg-dark-900 rounded-lg transition-colors"
+              className="block py-3 px-4 text-dark-50/80 hover:text-gold-400 hover:bg-dark-800 rounded-lg transition-colors"
             >
               {link.label}
             </a>
@@ -101,7 +88,7 @@ export default function Navigation() {
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}
-            className="block mt-3 bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-3 rounded-lg text-center font-semibold transition-all"
+            className="block mt-3 bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-3 rounded-lg text-center font-bold transition-all"
           >
             Gratis Gesprek
           </a>

@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background-color: #0d0d0d;
-  color: #e7e7e7;
+  background-color: #0a0a0f;
+  color: #f5f0e8;
 }
 
 /* Scroll animation classes */
@@ -41,7 +41,7 @@ body {
 
 /* Gold gradient text */
 .text-gradient-gold {
-  background: linear-gradient(135deg, #f0cc4d, #d4a017, #e8b820);
+  background: linear-gradient(135deg, #c9a96e, #b8944c, #d4b87a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -49,15 +49,15 @@ body {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #0c1117;
 }
 ::-webkit-scrollbar-thumb {
-  background: #4f4f4f;
-  border-radius: 4px;
+  background: #2a3040;
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #6d6d6d;
+  background: #3a4050;
 }

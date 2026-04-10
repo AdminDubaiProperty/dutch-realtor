@@ -1,3 +1,5 @@
+import { Quote } from "lucide-react";
+
 export default function Testimonials() {
   const testimonials = [
     {
@@ -13,7 +15,7 @@ export default function Testimonials() {
       initials: "LB",
     },
     {
-      text: "Van oriëntatie tot sleuteloverdracht in 8 weken. Topservice!",
+      text: "Van orientatie tot sleuteloverdracht in 8 weken. Topservice!",
       name: "Mohammed El Amrani",
       city: "Utrecht",
       initials: "MA",
@@ -21,10 +23,10 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-dark-950">
+    <section className="py-24 md:py-32 bg-dark-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16 scroll-animate">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-dark-50 mb-4 tracking-tight">
             Wat onze klanten <span className="text-gradient-gold">zeggen</span>
           </h2>
         </div>
@@ -33,10 +35,17 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className={`scroll-animate scroll-animate-delay-${i + 1} bg-gradient-to-br from-dark-900 to-dark-950 border border-dark-800 rounded-2xl p-8 hover:border-gold-500/30 transition-all duration-300`}
+              className={`scroll-animate scroll-animate-delay-${i + 1} relative bg-gradient-to-br from-dark-800/60 to-dark-950 border border-dark-700/50 rounded-2xl p-8 hover:border-gold-500/30 hover:scale-[1.02] hover:shadow-xl hover:shadow-gold-500/5 transition-all duration-300 overflow-hidden`}
             >
+              {/* Background quote decoration */}
+              <Quote
+                size={120}
+                strokeWidth={0.5}
+                className="absolute top-4 right-4 text-gold-500/5 rotate-180"
+              />
+
               {/* Stars */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-4 relative z-10">
                 {[...Array(5)].map((_, j) => (
                   <svg
                     key={j}
@@ -49,17 +58,17 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-dark-200 text-lg leading-relaxed mb-6 italic">
+              <p className="text-dark-50/70 text-lg leading-relaxed mb-6 italic relative z-10 font-light">
                 &ldquo;{t.text}&rdquo;
               </p>
 
-              <div className="flex items-center gap-3">
-                <div className="w-11 h-11 bg-gold-500/20 rounded-full flex items-center justify-center text-gold-400 font-semibold text-sm">
+              <div className="flex items-center gap-3 relative z-10">
+                <div className="w-11 h-11 bg-gold-500/15 rounded-full flex items-center justify-center text-gold-400 font-semibold text-sm border border-gold-500/20">
                   {t.initials}
                 </div>
                 <div>
-                  <p className="text-white font-semibold">{t.name}</p>
-                  <p className="text-dark-500 text-sm">{t.city}</p>
+                  <p className="text-dark-50 font-semibold">{t.name}</p>
+                  <p className="text-dark-50/40 text-sm">{t.city}</p>
                 </div>
               </div>
             </div>

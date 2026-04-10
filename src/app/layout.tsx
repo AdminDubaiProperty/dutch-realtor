@@ -1,24 +1,25 @@
 import type { Metadata } from "next";
-import { Playfair_Display, IBM_Plex_Sans } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-outfit",
   display: "swap",
 });
 
-const ibmPlex = IBM_Plex_Sans({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-ibm-plex",
+  variable: "--font-plus-jakarta",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Dutch Realtor | Investeer in Vastgoed Wereldwijd",
   description:
-    "Van Marrakech tot Dubai, van Curaçao tot Belgrado. Wij begeleiden Nederlandse investeerders bij elke stap van het aankoopproces in buitenlands vastgoed.",
+    "Van Marrakech tot Dubai, van Curacao tot Belgrado. Wij begeleiden Nederlandse investeerders bij elke stap van het aankoopproces in buitenlands vastgoed.",
   keywords:
     "vastgoed buitenland, investeren vastgoed, Nederlandse makelaar, Dubai vastgoed, Marokko vastgoed, Spanje vastgoed",
   openGraph: {
@@ -36,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" className={`${playfair.variable} ${ibmPlex.variable}`}>
+    <html lang="nl" className={`${outfit.variable} ${plusJakarta.variable}`}>
       <body className="font-body antialiased">{children}</body>
     </html>
   );

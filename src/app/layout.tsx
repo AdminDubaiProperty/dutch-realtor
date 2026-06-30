@@ -17,17 +17,40 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Dutch Realtor | Investeer in Vastgoed Wereldwijd",
+  metadataBase: new URL("https://thedutchrealtor.nl"),
+  title: {
+    default: "The Dutch Realtor | Buitenlands vastgoed kopen met Nederlandse begeleiding",
+    template: "%s | The Dutch Realtor",
+  },
   description:
-    "Van Marrakech tot Dubai, van Curacao tot Belgrado. Wij begeleiden Nederlandse investeerders bij elke stap van het aankoopproces in buitenlands vastgoed.",
-  keywords:
-    "vastgoed buitenland, investeren vastgoed, Nederlandse makelaar, Dubai vastgoed, Marokko vastgoed, Spanje vastgoed",
+    "The Dutch Realtor helpt Nederlanders buitenlands vastgoed vergelijken op kosten, aankoopproces, locatie, servicekosten en huurscenario's. Geen garanties, wel betere voorbereiding.",
+  keywords: [
+    "vastgoed buitenland kopen",
+    "buitenlands vastgoed vergelijken",
+    "Dubai vastgoed kopen",
+    "Marokko vastgoed kopen",
+    "Nederlandse begeleiding vastgoed",
+    "servicekosten Dubai vastgoed",
+  ],
+  alternates: { canonical: "https://thedutchrealtor.nl" },
   openGraph: {
-    title: "Dutch Realtor | Investeer in Vastgoed Wereldwijd",
+    title: "The Dutch Realtor | Buitenlands vastgoed kopen met Nederlandse begeleiding",
     description:
-      "Wij begeleiden Nederlandse investeerders bij elke stap van het aankoopproces in buitenlands vastgoed.",
+      "Nederlandse gidsen, checklists en projectinformatie voor vastgoedoriëntatie in Dubai, Marokko, Spanje, Curaçao en Georgië.",
     type: "website",
     locale: "nl_NL",
+    url: "https://thedutchrealtor.nl",
+    siteName: "The Dutch Realtor",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Dutch Realtor",
+    description: "Buitenlands vastgoed beter vergelijken met Nederlandse begeleiding.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-snippet": -1, "max-image-preview": "large", "max-video-preview": -1 },
   },
 };
 

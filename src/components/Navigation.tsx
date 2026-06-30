@@ -14,11 +14,11 @@ export default function Navigation() {
   }, []);
 
   const links = [
-    { href: "#home", label: "Home" },
-    { href: "#landen", label: "Landen" },
-    { href: "#werkwijze", label: "Werkwijze" },
-    { href: "#over-ons", label: "Over Ons" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#home", label: "Home" },
+    { href: "/#landen", label: "Landen" },
+    { href: "/#werkwijze", label: "Werkwijze" },
+    { href: "/blog", label: "Kennisbank" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   return (
@@ -31,9 +31,9 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="#home" className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <span className="text-gold-400 text-2xl font-heading font-semibold tracking-tight">
-              Dutch Realtor
+              The Dutch Realtor
             </span>
           </a>
 
@@ -48,7 +48,7 @@ export default function Navigation() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="/#contact"
               className="bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 hover:shadow-lg hover:shadow-gold-500/20"
             >
               Gratis Gesprek

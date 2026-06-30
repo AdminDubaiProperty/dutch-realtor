@@ -2,12 +2,12 @@ import Image from "next/image";
 import { MapPin } from "lucide-react";
 
 const countries = [
-  { name: "Marokko", price: "\u20AC45.000", tag: "Hoog huurrendement", image: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=800&q=80", featured: true },
-  { name: "Spanje", price: "\u20AC95.000", tag: "Golden Visa", image: "https://images.unsplash.com/photo-1509840841025-9088ba78a826?w=800&q=80", featured: true },
-  { name: "Dubai", price: "\u20AC150.000", tag: "0% inkomstenbelasting", image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80", featured: true },
-  { name: "Griekenland", price: "\u20AC70.000", tag: "Golden Visa EU", image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80", featured: true },
+  { name: "Marokko", price: "€45.000", tag: "Huurscenario's onderzoeken", image: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=800&q=80", featured: true },
+  { name: "Spanje", price: "€95.000", tag: "Verblijfsregels checken", image: "https://images.unsplash.com/photo-1509840841025-9088ba78a826?w=800&q=80", featured: true },
+  { name: "Dubai", price: "€150.000", tag: "Kosten en service charges", image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80", featured: true },
+  { name: "Griekenland", price: "€70.000", tag: "Voorwaarden vergelijken", image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80", featured: true },
   { name: "Curacao", price: "\u20AC85.000", tag: "Koninkrijksband", image: "https://images.unsplash.com/photo-1580237072617-771c3ecc4a24?w=800&q=80", featured: false },
-  { name: "Georgie", price: "\u20AC25.000", tag: "0% vermogensbelasting", image: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&q=80", featured: false },
+  { name: "Georgie", price: "€25.000", tag: "Lokale regels checken", image: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&q=80", featured: false },
   { name: "Albanie", price: "\u20AC55.000", tag: "Opkomende markt", image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80", featured: false },
   { name: "Saudi-Arabie", price: "\u20AC120.000", tag: "Vision 2030", image: "https://images.unsplash.com/photo-1578895101408-1a36b834405b?w=800&q=80", featured: false },
   { name: "Suriname", price: "\u20AC35.000", tag: "Nederlandse taal", image: "https://images.unsplash.com/photo-1605130284535-11dd9eedc58a?w=800&q=80", featured: false },

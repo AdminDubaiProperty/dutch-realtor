@@ -97,9 +97,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <div className="max-w-3xl mx-auto">
             <MarkdownContent content={post.content} />
             <div className="mt-12 rounded-3xl border border-gold-400/25 bg-gold-500/10 p-6">
-              <h2 className="font-heading text-2xl text-dark-50 mb-2">Wil je projecten op deze punten vergelijken?</h2>
-              <p className="text-dark-50/65 mb-5">Plan een gratis orientatiegesprek. We kijken rustig naar land, budget, kosten, documenten en vervolgstappen.</p>
-              <Link href="/#contact" className="inline-flex bg-gold-500 hover:bg-gold-600 text-dark-950 px-5 py-3 rounded-xl font-medium transition-colors">Plan orientatiegesprek</Link>
+              <h2 className="font-heading text-2xl text-dark-50 mb-2">Algemene oriëntatie</h2>
+              <p className="text-dark-50/65">Deze kennisbank is bedoeld om vragen, kosten en documenten beter te begrijpen. De inhoud is geen financieel, fiscaal of juridisch advies.</p>
             </div>
           </div>
         </div>
